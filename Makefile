@@ -38,7 +38,7 @@ IMAGES_FILES   := $(DIA_FILES:.dia=.png)
 %.png: %.dia
 	@echo ""
 	@echo "Creating images: "$@
-	$(DIA) --size=64x  --export="$@" "$<"
+	$(DIA) --size=96x  --export="$@" "$<"
 
 images: $(IMAGES_FILES)
 	@echo ""
